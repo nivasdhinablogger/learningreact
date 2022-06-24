@@ -2,24 +2,21 @@ import React, { Component } from 'react'
 
 export class Rendering extends Component {
 
-    constructor(props){
-        super(props);
-        this.state={isLoggedIn:true};
+    constructor(){
+        super();
+        this.state={isLoggedIn:false};
         this.handleLoginClick=this.handleLoginClick.bind(this);
-        this.handleLogOutClick=this.handleLogOutClick.bind(this);
     }
 
     handleLoginClick(){
         this.setState({isLoggedIn:!this.state.isLoggedIn})
     }
-    handleLogOutClick(){
-        this.setState({isLoggedIn:!this.state.isLoggedIn})
-    }
+
     render() {
 
         let button;
         if(this.state.isLoggedIn){
-             button=<LogOut onClick={this.handleLogOutClick}/>
+             button=<LogOut onClick={this.handleLoginClick}/>
         }else{
              button=<Login onClick={this.handleLoginClick}/>
         }
@@ -39,6 +36,7 @@ const Login   = props => {
         <div>
             <button onClick={props.onClick}>Login</button>
         </div>
+        
     )
 }
 
@@ -50,6 +48,22 @@ const LogOut = props => {
         </div>
     )
 }
+
+
+const Greetings = props => {
+    if(props.isLoggedIn){
+
+        return (
+            <div>
+                
+            </div>
+        )
+    }
+}
+
+
+
+
 
 
 

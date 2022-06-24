@@ -15,7 +15,10 @@ export class Clock extends Component {
 
   render() {
     return (
-      <div><h1>The Time is {this.state.date.toLocaleTimeString()} </h1></div>
+      <div>
+        <b>This clock below is done by rendering the Dom each time the state Updates. If you can follow this code you can easily understand the state concept in React. Lifecycle methods are also used in this part.  </b>
+        <h3>The Time is {this.state.date.toLocaleTimeString()} </h3>
+      </div>
     )
   }
 }

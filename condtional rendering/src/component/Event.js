@@ -15,6 +15,7 @@ export class Event extends Component {
     render() {
         return (
             <div>
+                <h3>Events Handling Explained.</h3>
                 <button onClick={this.changeYesToNo}>{this.state.isYes ? "Yes" : "No"}</button>
             </div>
         )

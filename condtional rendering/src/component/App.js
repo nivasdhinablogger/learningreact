@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+
 
 function App(props) {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
+    <div>
+      <h1>This is an OutPut page of the below github Repo. If you are trying to learn react in fast way you can easily follow this code.  </h1>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://github.com/nivasdhinablogger/learningreact"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React {props.name}
+          GitHub Repo {props.name}
         </a>
-      </header>
     </div>
   );
 }
