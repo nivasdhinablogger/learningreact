@@ -1,5 +1,6 @@
 import React from 'react'
 import './App.css'
+
 const ToDo = props => (
   <tr>
     <td>
@@ -10,7 +11,7 @@ const ToDo = props => (
     </td>
     <td>
       <label>{props.createdAt.toTimeString()}</label>
-    </td>
+    </td> 
   </tr>
 );
 
@@ -85,12 +86,12 @@ class ToDoList extends React.Component {
         <button onClick={this.addToEnd.bind(this)}>
           Add New to End
         </button>
-        <button onClick={this.sortByEarliest.bind(this)}>
+        {/* <button onClick={this.sortByEarliest.bind(this)}>
           Sort by Earliest
         </button>
         <button onClick={this.sortByLatest.bind(this)}>
           Sort by Latest
-        </button>
+        </button> */}
         <table>
           <tr>
             <th>ID</th>
